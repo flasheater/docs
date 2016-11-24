@@ -122,7 +122,7 @@ tns run android --emulator
 > **WARNING**:
 > * You must have at least one Android AVD (Android Virtual Device) configured for this command to work. If you get an error, try [setting up an AVD](http://developer.telerik.com/featured/using-android-emulator-hybrid-mobile-apps-telerik-appbuilder/#managing-avds) and then run the command again.
 > * If you're using [Genymotion](https://www.genymotion.com), launch your Genymotion virtual device first, and then run `tns run android` to deploy your app. In case of any errors, change the ADB settings of Genymotion to use Android SDK instead and try again.
-
+> * If you are using [Hyper-V](https://www.microsoft.com/en-us/cloud-platform/virtualization) on Windows, disable it by running 'bcdedit /set hypervisorlaunchtype off' as Administrator. Otherwise it prevents the Android emulator from starting.
 If all went well, you should see your app running in an Android emulator:
 
 ![Android login](../img/cli-getting-started/angular/chapter1/android/1.png)
